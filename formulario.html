@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta - Experiencia Gastronómica</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 700px;
+      border: 3px solid #ff914d;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ff5e00;
+      font-size: 26px;
+    }
+    label {
+      display: block;
+      margin-bottom: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+    select, input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 2px solid #ffb347;
+      border-radius: 8px;
+      font-size: 15px;
+      background: #fff7f0;
+      transition: all 0.2s ease-in-out;
+    }
+    select:focus, input:focus, textarea:focus {
+      outline: none;
+      border-color: #ff5e00;
+      background: #fff3e6;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background: #ff5e00;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      margin-top: 25px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #e64a00;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="https://formspree.io/f/xnnzknka" method="POST">
+    <h2>🍽️ Encuesta de Experiencia Gastronómica</h2>
+
+    <label>
+      ¿Cómo calificaría la calidad de la comida?
+      <select name="calidad_comida" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy mala</option>
+        <option>2 - Mala</option>
+        <option>3 - Regular</option>
+        <option>4 - Buena</option>
+        <option>5 - Excelente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Qué platillo fue su favorito?
+      <input type="text" name="platillo_favorito" placeholder="Escriba su respuesta">
+    </label>
+
+    <label>
+      ¿La presentación de los platillos le pareció atractiva?
+      <select name="presentacion_platillos" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy mala</option>
+        <option>2 - Mala</option>
+        <option>3 - Regular</option>
+        <option>4 - Buena</option>
+        <option>5 - Excelente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Cómo evaluaría el sabor de los alimentos?
+      <select name="sabor_alimentos" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy malo</option>
+        <option>2 - Malo</option>
+        <option>3 - Regular</option>
+        <option>4 - Bueno</option>
+        <option>5 - Excelente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿La temperatura de los alimentos fue la adecuada?
+      <select name="temperatura_alimentos" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy mala</option>
+        <option>2 - Mala</option>
+        <option>3 - Regular</option>
+        <option>4 - Buena</option>
+        <option>5 - Excelente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Encontró variedad suficiente en el menú?
+      <select name="variedad_menu" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy poca</option>
+        <option>2 - Poca</option>
+        <option>3 - Regular</option>
+        <option>4 - Buena</option>
+        <option>5 - Excelente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Los tiempos de espera para recibir su comida fueron adecuados?
+      <select name="tiempos_espera" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy malos</option>
+        <option>2 - Malos</option>
+        <option>3 - Regulares</option>
+        <option>4 - Buenos</option>
+        <option>5 - Excelentes</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Cómo calificaría la atención del personal?
+      <select name="atencion_personal" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy mala</option>
+        <option>2 - Mala</option>
+        <option>3 - Regular</option>
+        <option>4 - Buena</option>
+        <option>5 - Excelente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿El ambiente del restaurante resultó agradable?
+      <select name="ambiente_restaurante" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy malo</option>
+        <option>2 - Malo</option>
+        <option>3 - Regular</option>
+        <option>4 - Bueno</option>
+        <option>5 - Excelente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿La limpieza fue satisfactoria?
+      <select name="limpieza" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Muy mala</option>
+        <option>2 - Mala</option>
+        <option>3 - Regular</option>
+        <option>4 - Buena</option>
+        <option>5 - Excelente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Los precios le parecieron justos en relación con la calidad?
+      <select name="precios_justos" required>
+        <option value="">Seleccione...</option>
+        <option>1 - Nada justos</option>
+        <option>2 - Poco justos</option>
+        <option>3 - Regulares</option>
+        <option>4 - Justos</option>
+        <option>5 - Muy justos</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Recomendaría nuestro restaurante con amigos y familiares?
+      <select name="recomendacion" required>
+        <option value="">Seleccione...</option>
+        <option>Sí, definitivamente</option>
+        <option>Tal vez</option>
+        <option>No lo recomendaría</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Con qué frecuencia le gustaría visitarnos?
+      <select name="frecuencia_visitas" required>
+        <option value="">Seleccione...</option>
+        <option>Una vez a la semana</option>
+        <option>Varias veces al mes</option>
+        <option>Una vez al mes</option>
+        <option>Ocasionalmente</option>
+      </select>
+    </label>
+
+    <label>
+      ¿Qué platillos o bebidas le gustaría que agregáramos al menú?
+      <input type="text" name="sugerencias_menu" placeholder="Escriba su sugerencia">
+    </label>
+
+    <label>
+      ¿Tiene algún comentario adicional para mejorar nuestro servicio?
+      <textarea name="comentarios" rows="4" placeholder="Escriba su opinión..."></textarea>
+    </label>
+
+    <button type="submit">✅ Enviar Encuesta</button>
+  </form>
+
+</body>
+</html>

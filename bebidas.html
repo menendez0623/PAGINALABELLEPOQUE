@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Restaurante Francés</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .drink-item {
+            background-color: white;
+            margin: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .drink-item:hover {
+            transform: translateY(-10px);
+        }
+        .drink-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .drink-item h3 {
+            font-size: 1.5em;
+            margin: 15px 0 5px;
+            color: #2c3e50;
+        }
+        .drink-item p {
+            font-size: 1em;
+            margin: 0 15px 15px;
+            color: #7f8c8d;
+        }
+        .price {
+            font-size: 1.3em;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        .menu-category {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .menu-category h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bebidas - Restaurante Francés</h1>
+    <p>Una selección exclusiva de bebidas clásicas y modernas para acompañar tu experiencia culinaria francesa.</p>
+</header>
+
+<!-- Categorías del Menú -->
+<div class="menu-category">
+    <h2>Bebidas Calientes</h2>
+    <div class="menu-container">
+        <div class="drink-item">
+            <img src="cafe.jpg" alt="Le Café Français">
+            <h3>Le Café Français</h3>
+            <p>El tradicional café francés servido de manera clásica con una pequeña galleta al lado.</p>
+            <p class="price">€3.50</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="chocolate.jpg" alt="Chocolat Chaud">
+            <h3>Chocolat Chaud</h3>
+            <p>Un delicioso chocolate caliente cremoso y espeso, perfecto para los días fríos.</p>
+            <p class="price">€4.00</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="te.jpg" alt="Thé de Provence">
+            <h3>Thé de Provence</h3>
+            <p>Una mezcla de té de hierbas con sabores florales y una fragancia de la región de Provenza.</p>
+            <p class="price">€4.00</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="frambuesa.jpg" alt="Infusion de Framboise">
+            <h3>Infusión de Frambuesa</h3>
+            <p>Una infusión refrescante de frambuesas y hierbas, ideal para relajarse.</p>
+            <p class="price">€3.80</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="caramel.jpg" alt="Caramel Macchiato">
+            <h3>Caramel Macchiato</h3>
+            <p>Un delicioso espresso con leche vaporizada y un toque de sirope de caramelo.</p>
+            <p class="price">€5.00</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="lechecafe.jpg" alt="Café au Lait">
+            <h3>Café au Lait</h3>
+            <p>Café fuerte con leche caliente, un clásico de las cafeterías francesas.</p>
+            <p class="price">€3.60</p>
+        </div>
+    </div>
+</div>
+
+<div class="menu-category">
+    <h2>Bebidas Frías</h2>
+    <div class="menu-container">
+        <div class="drink-item">
+            <img src="limonada.jpg" alt="Citronnade Maison">
+            <h3>Citronnade Maison</h3>
+            <p>Refrescante limonada casera con un toque de menta y una rodaja de limón.</p>
+            <p class="price">€4.00</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="vino.jpg" alt="Kir Royale">
+            <h3>Kir Royale</h3>
+            <p>Un cóctel francés de vino espumoso con un toque de licor de grosella negra.</p>
+            <p class="price">€7.50</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="cham.jpg" alt="Champagne">
+            <h3>Champagne</h3>
+            <p>Vino espumoso y elegante, perfecto para celebraciones o para acompañar cualquier ocasión especial.</p>
+            <p class="price">€9.00</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="alcohol.jpg" alt="Pastis de Marseille">
+            <h3>Pastis de Marseille</h3>
+            <p>Una bebida anisada típica de la región de Marsella, servida con agua fría y hielo.</p>
+            <p class="price">€5.50</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="fresa.jpg" alt="Fraise et Basilic">
+            <h3>Fraise et Basilic</h3>
+            <p>Una bebida fría a base de fresas frescas y un toque de albahaca, ideal para refrescarte.</p>
+            <p class="price">€5.00</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="fresalimonada.jpg" alt="Limonade Fraise">
+            <h3>Limonade Fraise</h3>
+            <p>Una limonada fresca y afrutada con sabor a fresa, perfecta para los días calurosos.</p>
+            <p class="price">€4.50</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="smo.jpg" alt="Smoothie Framboise">
+            <h3>Smoothie de Frambuesa</h3>
+            <p>Un batido suave de frambuesas frescas con un toque de yogurt natural.</p>
+            <p class="price">€6.00</p>
+        </div>
+
+        <div class="drink-item">
+            <img src="lechefresa.jpg" alt="Lait Fraise">
+            <h3>Lait Fraise</h3>
+            <p>Leche fría con sirope de fresa, ideal para acompañar tus comidas o como un delicioso postre líquido.</p>
+            <p class="price">€3.90</p>
+        </div>
+
+       

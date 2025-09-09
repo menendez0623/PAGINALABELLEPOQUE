@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas - Restaurante Francés</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .dish-item {
+            background-color: white;
+            margin: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .dish-item:hover {
+            transform: translateY(-10px);
+        }
+        .dish-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .dish-item h3 {
+            font-size: 1.5em;
+            margin: 15px 0 5px;
+            color: #34495e;
+        }
+        .dish-item p {
+            font-size: 1em;
+            margin: 0 15px 15px;
+            color: #7f8c8d;
+        }
+        .price {
+            font-size: 1.3em;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        .menu-category {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .menu-category h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entradas - Restaurante Francés</h1>
+    <p>Descubre los sabores delicados de nuestras entradas, saladas y dulces.</p>
+</header>
+
+<!-- Categorías del Menú -->
+<div class="menu-category">
+    <h2>Entradas Saladas</h2>
+    <div class="menu-container">
+        <div class="dish-item">
+            <img src="caracoles.jpg" alt="Escargots de Bourgogne">
+            <h3>Escargots de Bourgogne</h3>
+            <p>Caracoles de Borgoña cocidos con mantequilla, ajo y hierbas provenzales. Un auténtico clásico francés.</p>
+            <p class="price">€18.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="pato.jpg" alt="Foie Gras">
+            <h3>Foie Gras</h3>
+            <p>Delicioso foie gras de pato, acompañado de pan tostado y mermelada de higos. Un lujo en cada bocado.</p>
+            <p class="price">€22.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="sopa.jpg" alt="Soupe à l'Oignon">
+            <h3>Soupe à l'Oignon</h3>
+            <p>Sopa de cebolla gratinada, servida con pan crujiente y queso derretido. Perfecta para comenzar la comida.</p>
+            <p class="price">€12.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="ensalada.jpg" alt="Salade Niçoise">
+            <h3>Salade Niçoise</h3>
+            <p>Ensalada fresca con atún, aceitunas, huevo duro, anchoas y vegetales de la región de Niza.</p>
+            <p class="price">€16.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="tarta.jpg" alt="Quiche Lorraine">
+            <h3>Quiche Lorraine</h3>
+            <p>Una tarta salada hecha con una mezcla cremosa de tocino, queso y huevo, típica de la región de Lorena.</p>
+            <p class="price">€14.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="salmon.jpg" alt="Salmon Gravlax">
+            <h3>Salmon Gravlax</h3>
+            <p>Salmon curado con sal, azúcar y eneldo, servido con tostadas y una salsa cremosa de mostaza.</p>
+            <p class="price">€18.00</p>
+        </div>
+    </div>
+</div>
+
+<div class="menu-category">
+    <h2>Entradas Dulces</h2>
+    <div class="menu-container">
+        <div class="dish-item">
+            <img src="pay.jpg" alt="Tarte Tatin">
+            <h3>Tarte Tatin</h3>
+            <p>Deliciosa tarta de manzana caramelizada, servida con una bola de helado de vainilla. Un postre que cautiva.</p>
+            <p class="price">€12.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="crepa.jpg" alt="Crêpes Suzette">
+            <h3>Crêpes Suzette</h3>
+            <p>Crêpes finas servidas con una salsa de naranja y licor, flambadas al momento frente a ti.</p>
+            <p class="price">€14.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="pancitos.jpg" alt="Madeleines">
+            <h3>Madeleines</h3>
+            <p>Pequeños bizcochos de mantequilla, ligeros y esponjosos, perfectos para acompañar un té o café.</p>
+            <p class="price">€8.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="profi.jpg" alt="Profiteroles">
+            <h3>Profiteroles</h3>
+            <p>Pequeños bollos rellenos de crema pastelera, bañados en una suave salsa de chocolate.</p>
+            <p class="price">€10.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="creme.jpg" alt="Crème Brûlée">
+            <h3>Crème Brûlée</h3>
+            <p>Flan de vainilla con una capa crujiente de azúcar caramelizado. Un clásico de la repostería francesa.</p>
+            <p class="price">€9.00</p>
+        </div>
+
+        <div class="dish-item">
+            <img src="cereza.jpg" alt="Clafoutis">
+            <h3>Clafoutis</h3>
+            <p>Un pastel francés de cerezas cubiertas con una mezcla de crema, huevo y harina, horneado hasta quedar dorado.</p>
+            <p class="price">€10.00</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
